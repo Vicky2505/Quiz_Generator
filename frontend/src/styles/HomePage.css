@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: #0a0f1c;
+    color: #00f7ff;
+    height: 100vh;
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .home-title {
+    font-size: 3rem;
+    text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+  }
+  
+  .dashboard-btns {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .dashboard-btns button {
+    background: transparent;
+    border: 2px solid #00f7ff;
+    color: #00f7ff;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #00f7ff;
+  }
+  
+  .dashboard-btns button:hover {
+    background: #00f7ff;
+    color: #0a0f1c;
+    box-shadow: 0 0 20px #00f7ff;
+  }
+  .neon-button {
+    position: relative;
+    padding: 1rem 2rem;
+    border: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    color: #00f7ff;
+    background: #0a0f1c;
+    border: 2px solid #00f7ff;
+    cursor: pointer;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0 10px #00f7ff;
+  }
+  
+  .neon-button::before,
+  .neon-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #00f7ff;
+    top: 0;
+    left: -100%;
+    animation: glitch-glow 2s infinite linear;
+  }
+  
+  .neon-button::after {
+    top: auto;
+    bottom: 0;
+    left: 100%;
+    animation-delay: 1s;
+  }
+  
+  .neon-button:hover {
+    background-color: #00f7ff;
+    color: #0a0f1c;
+    box-shadow: 0 0 20px #00f7ff, 0 0 40px #00f7ff;
+    transform: scale(1.03);
+  }
+  
+  @keyframes glitch-glow {
+    0% {
+      left: -100%;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+  

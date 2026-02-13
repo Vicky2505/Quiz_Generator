@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pydantic
+python-multipart
+requests
+python-dotenv
+PyMuPDF
+sqlalchemy         # for SQL-based databases
+pymongo            # if using MongoDB

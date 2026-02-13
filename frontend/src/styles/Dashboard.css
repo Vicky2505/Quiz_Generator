@@ -1,0 +1,195 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fa;
+  color: #1f2937;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Top Section: Upload Box */
+.upload-section {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+  margin-top: -4rem;
+}
+
+.upload-section:hover {
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* Upload Box */
+.upload-box {
+  width: 250px;
+  height: 250px;
+  border: 2px dashed #2563eb;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background-color: #f0f4ff;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.upload-box:hover {
+  background-color: #e0e7ff;
+  border-color: #3b82f6;
+  box-shadow: 0 6px 20px rgba(59,130,246,0.3);
+}
+
+.upload-box svg {
+  width: 50px;
+  height: 50px;
+  fill: #2563eb;
+  margin-bottom: 0.5rem;
+}
+
+.upload-box p {
+  font-size: 1rem;
+  color: #1e40af;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Hidden File Input */
+.upload-box input[type="file"] {
+  display: none;
+}
+
+/* Course ID Input */
+.upload-section input[type="text"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.upload-section input[type="text"]:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 10px rgba(59,130,246,0.2);
+}
+
+/* Upload Button */
+.upload-section button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background: #3b82f6;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.upload-section button:hover {
+  background: #1e40af;
+  box-shadow: 0 6px 15px rgba(30,64,175,0.3);
+}
+
+/* Message */
+.message {
+  font-size: 1rem;
+  color: #065f46;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: #d1fae5;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Bottom Section: Recent Uploads */
+.recent-uploads {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.recent-card {
+  background: #fff;
+  padding: 1.2rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.recent-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.recent-card h4 {
+  margin-bottom: 0.5rem;
+  color: #2563eb;
+  font-size: 1.1rem;
+}
+
+.recent-card p {
+  margin: 0.2rem 0;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+/* ---------------- Course Dropdown ---------------- */
+.upload-section select {
+  width: 100%;
+  max-width: 300px; /* optional, adjust as needed */
+  padding: 0.6rem 0.8rem;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  appearance: none; /* remove default arrow in some browsers */
+  cursor: pointer;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.upload-section select:hover,
+.upload-section select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.4);
+  outline: none;
+}
+
+/* Optional: add a custom arrow for dropdown */
+.upload-section select {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23999' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem center;
+  background-size: 1rem;
+  padding-right: 2.5rem; /* space for arrow */
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .upload-section input[type="text"], .upload-section button {
+    width: 100%;
+  }
+}

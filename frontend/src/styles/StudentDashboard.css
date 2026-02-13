@@ -1,0 +1,129 @@
+.student-container {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 3rem;
+    background: #0d0d0d;
+    color: #00f0ff;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 20px;
+    border: 2px solid #00f0ff;
+    box-shadow: 0 0 25px #00f0ff;
+  }
+  
+  .student-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-shadow: 0 0 10px #00f0ff;
+  }
+  
+  .question-block {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid #00f0ff;
+    box-shadow: 0 0 15px #00f0ff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+  }
+  
+  .question-block p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    background-color: rgba(0, 240, 255, 0.1);
+    border: 1px solid #00f0ff;
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  label:hover {
+    background-color: #00f0ff;
+    color: #0d0d0d;
+  }
+  
+  input[type="radio"] {
+    margin-right: 0.8rem;
+  }
+  
+  .submit-btn {
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem 2.5rem;
+    background: #00f0ff;
+    color: #0d0d0d;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 0 20px #00f0ff;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background: transparent;
+    color: #00f0ff;
+    border: 2px solid #00f0ff;
+    box-shadow: 0 0 25px #00f0ff;
+  }
+  
+
+  .neon-button {
+    position: relative;
+    padding: 1rem 2rem;
+    border: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    color: #00f7ff;
+    background: #0a0f1c;
+    border: 2px solid #00f7ff;
+    cursor: pointer;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0 10px #00f7ff;
+  }
+  
+  .neon-button::before,
+  .neon-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #00f7ff;
+    top: 0;
+    left: -100%;
+    animation: glitch-glow 2s infinite linear;
+  }
+  
+  .neon-button::after {
+    top: auto;
+    bottom: 0;
+    left: 100%;
+    animation-delay: 1s;
+  }
+  
+  .neon-button:hover {
+    background-color: #00f7ff;
+    color: #0a0f1c;
+    box-shadow: 0 0 20px #00f7ff, 0 0 40px #00f7ff;
+    transform: scale(1.03);
+  }
+  
+  @keyframes glitch-glow {
+    0% {
+      left: -100%;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+  

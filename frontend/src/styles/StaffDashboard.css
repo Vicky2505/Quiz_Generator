@@ -1,0 +1,164 @@
+.staff-container {
+    background: #0d0d0d;
+    color: #00f0ff;
+    padding: 4rem;
+    max-width: 700px;
+    margin: 3rem auto;
+    border-radius: 20px;
+    border: 2px solid #00f0ff;
+    box-shadow: 0 0 25px #00f0ff;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .staff-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-shadow: 0 0 15px #00f0ff;
+  }
+  
+  .upload-section {
+    border: 2px dashed #00f0ff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px #00f0ff;
+  }
+  
+  .upload-label {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background-color: #00f0ff;
+    color: #0d0d0d;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 12px #00f0ff;
+    transition: 0.3s;
+  }
+  
+  .upload-label:hover {
+    background-color: transparent;
+    color: #00f0ff;
+    border: 2px solid #00f0ff;
+    box-shadow: 0 0 20px #00f0ff;
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  
+  button {
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    background-color: #00f0ff;
+    color: #0d0d0d;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00f0ff;
+    transition: all 0.3s;
+  }
+  
+  button:hover {
+    background-color: transparent;
+    color: #00f0ff;
+    border: 2px solid #00f0ff;
+    box-shadow: 0 0 25px #00f0ff;
+  }
+  
+
+  .upload-container {
+    margin-top: 3rem;
+    padding: 2rem;
+    border: 2px dashed #00f7ff;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgba(0, 247, 255, 0.05);
+    box-shadow: 0 0 15px #00f7ff;
+    transition: 0.3s ease;
+  }
+  
+  .upload-container:hover {
+    background-color: rgba(0, 247, 255, 0.1);
+    box-shadow: 0 0 25px #00f7ff;
+  }
+  
+  .upload-container input {
+    display: none;
+  }
+  
+  .upload-label {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #00f7ff;
+    color: #0a0f1c;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .upload-label:hover {
+    background-color: #00bcd4;
+    box-shadow: 0 0 15px #00f7ff;
+  }
+  
+  .neon-button {
+    position: relative;
+    padding: 1rem 2rem;
+    border: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    color: #00f7ff;
+    background: #0a0f1c;
+    border: 2px solid #00f7ff;
+    cursor: pointer;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 0 10px #00f7ff;
+  }
+  
+  .neon-button::before,
+  .neon-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #00f7ff;
+    top: 0;
+    left: -100%;
+    animation: glitch-glow 2s infinite linear;
+  }
+  
+  .neon-button::after {
+    top: auto;
+    bottom: 0;
+    left: 100%;
+    animation-delay: 1s;
+  }
+  
+  .neon-button:hover {
+    background-color: #00f7ff;
+    color: #0a0f1c;
+    box-shadow: 0 0 20px #00f7ff, 0 0 40px #00f7ff;
+    transform: scale(1.03);
+  }
+  
+  @keyframes glitch-glow {
+    0% {
+      left: -100%;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+  
